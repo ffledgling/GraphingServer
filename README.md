@@ -16,6 +16,9 @@ INSTALL
 - `pip install matplotlib`
 - Clone repo and you're done!
 
+**Note: This setup does not seem to install everything for everyone**
+You may want to install numpy and a couple of other deps before this.
+See TODO.mkd regarding moving to a less demanding plotting framework.
 
 HOWTO
 -----
@@ -60,7 +63,7 @@ On the client side:
 for i in `seq 10`;do echo $i $(( $i * $i )) | nc localhost 9001; sleep 2; done;
 ```
 
-Point your browser at `<GraphServer IP>/test.png` and refresh to see the graph build live.
+Point your browser at `<GraphServer IP>/example.png` and refresh to see the graph build live.
 
 #### Author
 

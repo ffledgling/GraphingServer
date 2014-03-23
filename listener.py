@@ -51,7 +51,8 @@ class Listener():
             # If readable, try to get the data
             if readable:
                 client_sock, addr = server['socket'].accept()
-                if addr[0] in server['allowed_source_IPs']:
+                # If Sender IP is in allowed IPs or if list in empty, in which case we accept all sources.
+                if addr[0] in server['allowed_source_IPs'] or not server['allowed_source_IPs']:
                     raw_data = client_sock.recv(config.SIZE)
                     #print addr,"Sent",data
                     # Call the handler function

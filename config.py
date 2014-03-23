@@ -10,6 +10,7 @@ SERVERLIST = [
         'labels': ("bandwidth", "time"),
         'name': 'Test Server 2',
         'outfile': '/var/www/html/example.png',
+        # empty list implies accept all sources
         'allowed_source_IPs': ['127.0.0.1'],
         'key':''},
         ]
