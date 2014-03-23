@@ -1,0 +1,16 @@
+List of TODO items
+------------------
+
+1. Add argparse support
+2. Add variable DB config support
+3. Add Hot-Plugging
+4. Use a smaller plotting lib than matplotlib
+5. Add debug mode
+6. Add support for encrypted connections (?)
+7. Improve flexibility in terms of graphs that can be plotted
+8. Increase flexibility interms of functions that can be used.
+9. Add support for Legend and more graph settings
+
+
+####Note:
+This is a half a day hack project, so ofcourse it has a lot of TODOs.
